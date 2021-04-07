@@ -17,7 +17,7 @@
                 </li>
 
                 <li class="nav-item">
-                    {{-- <a class="nav-link" href="/environments">@lang('content.environments_page')</a> --}}
+                    <a class="nav-link" href="/environments">@lang('content.environments_page')</a>
                 </li>
 
                 <li class="nav-item">

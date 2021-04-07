@@ -23,7 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8feb1143-5548-42ae-afb3-40e39b1363c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_07_135100_for_pages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EnvironmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EnvironmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/nl/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/nl/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/environments/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/environments/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/environments/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/environments/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/environments/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/environments/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/nav.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +266,7 @@
       <workItem from="1617109448468" duration="9808000" />
       <workItem from="1617709230153" duration="8882000" />
       <workItem from="1617718431376" duration="172000" />
-      <workItem from="1617718611402" duration="1412000" />
+      <workItem from="1617718611402" duration="6312000" />
     </task>
     <task id="LOCAL-00001" summary="- Added navbar functionality&#10;- Added tiles for environments&#10;- Added footer&#10;- Made responsive&#10;- Added localization functionality (english, dutch)">
       <created>1605622394466</created>
@@ -302,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617794638421</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Admin Panel Working&#10;- Add Yacht&#10;- Edit Yacht&#10;- Remove Yacht&#10;- Show Yachts on homepage">
+      <created>1617794713300</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617794713300</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

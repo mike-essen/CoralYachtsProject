@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
-                <h1>Environments</h1>
+                <h1>@lang("content.pages")</h1>
             </div>
             <div class="col-sm-12 col-md-6">
                 <div class="card p-2 mt-1">
@@ -16,15 +16,13 @@
 
         <div class="row">
             @foreach($environments as $environment)
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-12">
                     <div class="card mt-5 card-shadow">
                         <div class="card-body">
                             <h3 class="mb-0">{{ $environment->title }}</h3>
                             <small>{{ $environment->category }}</small><br><br>
-                            <small>@lang('content.description_en')</small>
-                            <p class="mt-2">{{ $environment->description_en }}</p>
                             <small>@lang('content.description_nl')</small>
-                            <p class="mt-2">{{ $environment->description_nl }}</p>
+                            <p class="mt-2">{{ $environment->description }}</p>
                             <p class="mb-0"><a href="{{ url('/environments/' . $environment->id) }}">@lang('content.edit-environment')</a></p>
                             <form action="/environments/{{ $environment->id }}" method="POST">
                                 @method('DELETE')

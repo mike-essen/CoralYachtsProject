@@ -16,7 +16,7 @@ class EnvironmentController extends Controller
      */
     public function index()
     {
-        $environments = Environment::orderBy('order')->get();
+        $environments = Environment::all();
 
         return view::make('environments.index')->with(compact('environments'));
     }
@@ -44,14 +44,11 @@ class EnvironmentController extends Controller
         $request->validate([
             'url' => 'required|url'
         ]);
-        Environment::orderBy('order', 'desc')->first();
 
         $environment->title             = $request->title;
-        $environment->description_nl    = $request->description_nl;
-        $environment->description_en    = $request->description_en;
         $environment->url               = $request->url;
-        $environment->order             = $request->order;
         $environment->category          = $request->category;
+        $environment->description       = $request->description;
         $environment->save();
 
         session()->flash('success', 'Environment saved successfully!');
