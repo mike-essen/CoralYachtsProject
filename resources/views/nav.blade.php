@@ -15,10 +15,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">@lang('content.home_page')</a>
                 </li>
-
+                {{--
                 <li class="nav-item">
                     <a class="nav-link" href="/environments">@lang('content.environments_page')</a>
                 </li>
+                --}}
 
                 <li class="nav-item">
                     <a class="nav-link" href="/banners">@lang('content.banners_page')</a>
