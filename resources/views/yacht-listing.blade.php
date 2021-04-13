@@ -65,7 +65,7 @@
     </header>
 
     <div class="r-car-search">
-        
+
     </div> <!-- /r-car-search -->
 
     <section>
@@ -97,7 +97,7 @@
                                             <li><i class="fa"></i><span>LUXE</span></li>
                                         </ul>
                                     </div>
-                                    <div class="r-offer-rewst-this">
+                                    <div class="r-offer-rewst-this" onclick="return alert('Yacht Rented')">
                                         <span class="text-uppercase">Rent this yacht</span>
                                     </div>
                                 </div>

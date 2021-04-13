@@ -121,7 +121,7 @@
                             <textarea placeholder="Message" name="content" required="" id="content"></textarea>
                         </div>
                         <div class="text-center">
-                            <button onClick="sendContact()" class="btn btn-full">SEND MESSAGE NOW</button>
+                            <button onclick="return alert('Message Send!')">SEND MESSAGE NOW</button>
                         </div>
                         <div class="mt-4 text-uppercase text-white text-center" id="mail-status"></div>
                     </div>

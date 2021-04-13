@@ -188,13 +188,13 @@
         <div class="r-best-vehicles">
             <div class="r-sec-head r-accent-color r-sec-head-v">
                 <span>FEATURED YACHTS</span>
-                <h2>Our <b>Best Offers.</b></h2>
+                <h2>Our <b>Most Popular Offer.</b></h2>
 
             </div>
             <div class="container">
                 <div class="row clearfix r-best-offer-list">
-                    @foreach($banners as $banner)
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    @foreach($banners->slice(0, 1) as $banner)
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="r-best-offer-single">
                                 <div class="r-best-offer-in">
                                     <div class="r-offer-img">
