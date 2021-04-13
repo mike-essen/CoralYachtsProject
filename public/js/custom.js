@@ -62,6 +62,8 @@ var App = (function(window){
 
     },
 
+    
+
     getObject: function(selector){
       if(typeof cacheCollection[selector] == "undefined"){
         cacheCollection[selector] = $(selector);
@@ -548,6 +550,3 @@ $(window).on('scroll', function(){
     $('.r-header-strip').removeClass('r-header-fixed');
   }
 });
-
-
-

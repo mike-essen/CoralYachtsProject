@@ -78,7 +78,7 @@
                                         </li>
                                         <li><a href="faq">FAQ</a></li>
                                         <li class="r-has-child">
-                                            <a href="yacht-listing">YACHTS</a>
+                                            <a href="listing">YACHTS</a>
                                             <ul class="pl-0 ml-0">
                                                 <li><a href="listing">Yacht List Map</a></li>
                                                 <li><a href="booking">Yacht Booking</a></li>
@@ -993,15 +993,39 @@
     </footer>
 </div>
 <div id="r-to-top" class="r-to-top"><i class="fa fa-angle-up"></i></div>
+
 <!-- JQUERY:: JQUERY.JS -->
-<script src="assets/js/jquery.min.js"></script>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+
+<!-- JQUERY:: APPEAR.JS -->
+<script src="{{ asset('js/plugins/owl/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/js/plugins/owl/owl.carousel2.thumbs.js') }}"></script>
+<script src="{{ asset('js/plugins/appear/appear.js') }}"></script>
+
+
+<!-- JQUERY:: COUNTER.JS -->
+<script src="{{ asset('js/plugins/counter/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/plugins/counter/counter.min.js') }}"></script>
+
 
 <!-- JQUERY:: BOOTSTRAP.JS -->
-<script src="assets/js/tether.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/plugins/owl/owl.carousel.min.js"></script>
-<script src="assets/js/plugins/owl/owl.carousel2.thumbs.js"></script>
-<script src="assets/js/custom.js"></script>
+<script src="{{ asset('js/tether.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+<!-- JQUERY:: PLUGINS -->
+<script src="{{ asset('js/plugins/owl/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('js/plugins/lightcase/lightcase.js') }}"></script>
+
+
+<!-- JQUERY:: MAP -->
+<script src="{{ asset('js/map.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl-EDTJ5_uU3zBIX7-wNTu-qSZr1DO5Dw"></script>
+
+<!-- JQUERY:: CUSTOM.JS -->
+<script src="{{ asset('js/custom.js') }}"></script>
+</body>
+
+</html>
 
 </body>
 </html>

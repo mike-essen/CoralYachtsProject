@@ -10161,7 +10161,7 @@ COLOR CUSTOMIZER
         .r-header .r-header-strip.r-header-fixed.r-header-strip-01 .r-submenu-icon {
           color: #fff; }
   .r-header .r-header-inner-banner {
-    background: url(../images/inner-header.jpg) no-repeat;
+    background: url(../images/-hero-yacht-5.jpg) no-repeat;
     background-size: 100% 600px;
     background-attachment: fixed;
     position: relative;
@@ -14627,7 +14627,7 @@ a:focus {
       font-size: 14px; } }
 .r-login-register {
   background-color: #f8f4da;
-  padding: 130px 0; }
+  padding: 200px 0; }
   .r-login-register .r-login-register-in {
     max-width: 830px;
     margin: auto;

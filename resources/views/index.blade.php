@@ -65,7 +65,7 @@
                                         </li>
                                         <li><a href="faq">FAQ</a></li>
                                         <li class="r-has-child">
-                                            <a href="yacht-listing">YACHTS</a>
+                                            <a href="listing">YACHTS</a>
                                             <ul class="pl-0 ml-0">
                                                 <li><a href="listing">Yacht List Map</a></li>
                                                 <li><a href="booking">Yacht Booking</a></li>
@@ -86,7 +86,7 @@
                     <img src="{{ asset('images/-hero-yacht1.jpg') }}" class="img-fluid d-block m-auto" alt="">
                     <div class="container">
                         <div class="r-slider-top-content">
-                            <h1 class="animated fadeInDown">OceAnco <span>X90</span></h1>
+                            <h1 class="animated fadeInDown">OceJanco <span>X90</span></h1>
                             <h4 class="animated fadeInLeft">FOR RENT <strong>$500</strong> PER DAY</h4>
                             <a href="#" class="btn btn-outlined animated fadeInUp"> Reserve Now </a>
                         </div>
@@ -225,64 +225,6 @@
                             </div>
                         </div>
                     @endforeach
-
-                    {{--
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="r-best-offer-single">
-                            <div class="r-best-offer-in">
-                                <div class="r-offer-img">
-                                    <a class="d-inline-block" href="#"><img style="max-width:200px;"
-                                                                            src="{{ asset('images/-hero-yacht-2.jpg') }}"
-                                                                            class="img-fluid d-block m-auto" alt=""></a>
-                                    <div class="r-offer-img-over">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                                <div class="r-best-offer-content">
-                                    <a href="#"><b>DesTination</b> H5</a>
-
-                                    <p>Start at <b>350.00 USD</b> per day</p>
-                                    <ul class="pl-0 mb-0">
-                                        <li><i class="fa"></i><span>2021</span></li>
-                                        <li><i class="fa"></i><span>20 BUNKS</span></li>
-                                        <li><i class="fa"></i><span>BAR</span></li>
-                                        <li><i class="fa"></i><span>COMFOR</span></li>
-                                    </ul>
-                                </div>
-                                <div class="r-offer-rewst-this">
-                                    <span class="text-uppercase">Rent this yacht</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="r-best-offer-single">
-                            <div class="r-best-offer-in">
-                                <div class="r-offer-img">
-                                    <a class="d-inline-block" href="#"><img style="max-width:200px;"
-                                                                            src="{{ asset('images/-hero-yacht-3.jpg') }}"
-                                                                            class="img-fluid d-block m-auto" alt=""></a>
-                                    <div class="r-offer-img-over">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                                <div class="r-best-offer-content">
-                                    <a href="#"><b>Sparrow</b> Cap</a>
-                                    <p>Start at <b>278.00 USD</b> per day</p>
-
-                                    <ul class="pl-0 mb-0">
-                                        <li><i class="fa"></i><span>2018</span></li>
-                                        <li><i class="fa"></i><span>SAILS</span></li>
-                                        <li><i class="fa"></i><span>FISHING</span></li>
-                                        <li><i class="fa"></i><span>EXITEMENT</span></li>
-                                    </ul>
-                                </div>
-                                <div class="r-offer-rewst-this">
-                                    <span class="text-uppercase">Rent this yacht</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>--}}
                 </div>
             </div>
         </div>
@@ -508,29 +450,6 @@
             </ul>
         </div>
     </div>
-    <footer>
-        <div class="r-footer">
-            <div class="container">
-                <div>
-                    <div class="row clearfix r-footer-strip">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            ©2021 Created by Mike van Essen & Leroy Voortman
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <ul>
-                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i>.
-                                        <span>Facebook</span></a></li>
-                                <li><a href="https://twitter.com/"><i
-                                            class="fa fa-twitter"></i>.<span>Twitter</span></a></li>
-                                <li><a href="https://www.instagram.com/"><i
-                                            class="fa fa-instagram"></i>.<span>Instagram</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
 <div id="r-to-top" class="r-to-top"><i class="fa fa-angle-up"></i></div>
 
