@@ -30,3 +30,9 @@ Route::get('/moreData', 'PostController@morePosts');
 
 Route::resource('banners','BannerController')->middleware('auth');
 Route::post('banners','BannerController@store')->middleware('auth');
+
+Route::view('contact', 'contact')->middleware('auth');
+Route::view('faq', 'faq')->middleware('auth');
+Route::view('users', 'users');
+Route::view('booking', 'yacht-booking')->middleware('auth');
+Route::view('listing', 'yacht-listing')->middleware('auth');

@@ -63,23 +63,16 @@
                                         <li class="r-has-child">
                                             <a href="/">HOME</a>
                                         </li>
+                                        <li><a href="faq">FAQ</a></li>
                                         <li class="r-has-child">
-                                            <a href="about.html">ABOUT US</a>
+                                            <a href="yacht-listing">YACHTS</a>
                                             <ul class="pl-0 ml-0">
-                                                <li><a href="faq.blade.php">Faq</a></li>
+                                                <li><a href="listing">Yacht List Map</a></li>
+                                                <li><a href="booking">Yacht Booking</a></li>
                                             </ul>
                                         </li>
-                                        <li class="r-has-child">
-                                            <a href="car-listing.blade.php">VEHICLES</a>
-                                            <ul class="pl-0 ml-0">
-                                                <li><a href="car-list-map.blade.php">Car List Map</a></li>
-                                                <li><a href="car-booking.blade.php">Car Booking</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="gallery.blade.php">GALLERY</a></li>
-                                        <li><a href="drivers.blade.php">DRIVERS</a></li>
-                                        <li><a href="contact.blade.php">CONTACT US</a></li>
-                                        <li><a href="login-register.blade.php">LOGIN</a></li>
+                                        <li><a href="contact">CONTACT US</a></li>
+                                        <li><a href="users">LOGIN</a></li>
                                         <li><a href="banners">ADMIN</a></li>
                                     </ul>
                                 </nav>
