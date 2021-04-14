@@ -2,6 +2,7 @@
 
 namespace loginportal\Http\Controllers\Auth;
 
+use Auth;
 use loginportal\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 

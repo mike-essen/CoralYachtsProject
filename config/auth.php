@@ -46,6 +46,10 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'yachtuser' => [
+            'driver' => 'session',
+            'provider' => 'yachtusers',
+        ],
     ],
 
     /*
@@ -69,6 +73,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => loginportal\User::class,
+        ],
+
+        'writers' => [
+            'driver' => 'eloquent',
+            'model' => loginportal\YachtUser::class,
         ],
 
         // 'users' => [

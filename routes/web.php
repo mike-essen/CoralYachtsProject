@@ -34,5 +34,5 @@ Route::post('banners','BannerController@store')->middleware('auth');
 Route::view('contact', 'contact');
 Route::view('faq', 'faq');
 Route::view('users', 'users');
-Route::view('booking', 'yacht-booking');
-Route::get('listing', 'ListingController@index');
+Route::view('booking', 'yacht-booking')->middleware('auth');;
+Route::get('listing', 'ListingController@index')->middleware('auth');;

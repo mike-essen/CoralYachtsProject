@@ -40,19 +40,43 @@
                             <div class="r-nav-section float-right">
                                 <nav>
                                     <ul>
-                                        <li class="r-has-child">
+                                        <li>
                                             <a href="/">HOME</a>
                                         </li>
                                         <li><a href="faq">FAQ</a></li>
-                                        <li class="r-has-child">
-                                            <a href="listing">YACHTS</a>
-                                            <ul class="pl-0 ml-0">
-                                                <li><a href="listing">Yacht List Map</a></li>
-                                                <li><a href="booking">Yacht Booking</a></li>
-                                            </ul>
-                                        </li>
+                                        @if (Auth::check())
+                                            <li><a href="listing">YACHTS</a></li>
+                                        @else
+                                        @endif
                                         <li><a href="contact">CONTACT US</a></li>
                                         <li><a href="users">LOGIN</a></li>
+
+                                        @guest
+                                            @if (auth::check())
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                </li>
+                                            @endif
+                                        @else
+                                            <li class="nav-item dropdown">
+                                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                                </a>
+
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                        {{ __('Logout') }}
+                                                    </a>
+
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                        @csrf
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        @endguest
                                         <li><a href="banners">ADMIN</a></li>
                                     </ul>
                                 </nav>

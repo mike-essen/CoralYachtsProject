@@ -31,8 +31,8 @@
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <div class="r-logo">
                                 <a href="#" class="d-inline-block"><img
-                                    style="max-height:80px; padding-left:100px; padding-bottom:20px;"
-                                    src="{{ asset('images/-logo.png') }}" class="img-fluid d-block" alt=""></a>
+                                        style="max-height:80px; padding-left:100px; padding-bottom:20px;"
+                                        src="{{ asset('images/-logo.png') }}" class="img-fluid d-block" alt=""></a>
                             </div>
                             <a href="javaScript:void(0)" class="menu-icon"> <i class="fa fa-bars"></i> </a>
                         </div>
@@ -40,20 +40,9 @@
                             <div class="r-nav-section float-right">
                                 <nav>
                                     <ul>
-                                        <li class="r-has-child">
+                                        <li>
                                             <a href="/">HOME</a>
                                         </li>
-                                        <li><a href="faq">FAQ</a></li>
-                                        <li class="r-has-child">
-                                            <a href="listing">YACHTS</a>
-                                            <ul class="pl-0 ml-0">
-                                                <li><a href="listing">Yacht List Map</a></li>
-                                                <li><a href="booking">Yacht Booking</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact">CONTACT US</a></li>
-                                        <li><a href="users">LOGIN</a></li>
-                                        <li><a href="banners">ADMIN</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -63,66 +52,71 @@
             </div>
         </div>
     </header>
-    <section id="r-login-register">
-        <div class="r-login-register">
-            <div class="r-login-register-in">
-                <div class="r-auth-or">
-                    <span>OR</span>
-                </div>
-                <div class="clearfix">
-                    <div class="r-auth-outer r-login">
-                        <div class="r-auth-head">
-                            <h2><b>Login</b> Now</h2>
-                            <span>Login to our website</span>
-                        </div>
-                        <div class="r-auth-form">
-                            <div class="r-login-fb">
-                                <a href="#"><img src="assets/images/fb.jpg" class="img-fluid d-block m-auto" alt=""></a>
-                            </div>
-                            <div class="r-or-line"><span>OR SIGN IN</span></div>
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" required placeholder="Email">
+    <section>
+        <div class="container" style="padding-top: 300px;">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">{{ __('Login') }}</div>
+
+                        <div class="card-body">
+                            <form method="POST" action="{{ route('login') }}">
+                                @csrf
+
+                                <div class="form-group row" style="padding-top: 20px;">
+                                    <label for="email"
+                                           class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input id="email" type="email"
+                                               class="form-control @error('email') is-invalid @enderror" name="email"
+                                               value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                        @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" required placeholder="Password">
+
+                                <div class="form-group row">
+                                    <label for="password"
+                                           class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input id="password" type="password"
+                                               class="form-control @error('password') is-invalid @enderror"
+                                               name="password" required autocomplete="current-password">
+
+                                        @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <button class="btn btn-full">LOGIN NOW</button>
+
+                                <div class="form-group row">
+                                    <div class="col-md-6 offset-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="remember"
+                                                   id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                            <label class="form-check-label" for="remember">
+                                                {{ __('Remember Me') }}
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <a href="register">Register Here</a>
                                 </div>
-                            </form>
-                            <div class="r-from-inof">
-                                <p class="text-center">
-                                    * Denotes mandatory field. <br>
-                                    ** At least one telephone number is required.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="r-auth-outer r-register">
-                        <div class="r-auth-head">
-                            <h2><b>Register</b> Now</h2>
-                            <span>Required information for account creation</span>
-                        </div>
-                        <div class="r-auth-form">
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="text" required class="form-control" placeholder="User name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" required class="form-control" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" required class="form-control" placeholder="Confirm Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" required class="form-control" placeholder="Email Address">
-                                </div>
-                                <div class="form-group">
-                                    <img src="assets/images/recaptcha.jpg" class="img-fluid d-block m-auto" alt="">
-                                </div>
-                                <div class="form-group">
-                                    <button class="btn btn-full">SIGN UP NOW</button>
+
+                                <div class="form-group row mb-0" style="padding-bottom: 20px;">
+                                    <div class="col-md-8 offset-md-4">
+                                        <button type="submit" class="btn btn-primary">
+                                            {{ __('Login') }}
+                                        </button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -131,8 +125,6 @@
             </div>
         </div>
     </section>
-   
-    
 </div>
 <div id="r-to-top" class="r-to-top"><i class="fa fa-angle-up"></i></div>
 <!-- JQUERY:: JQUERY.JS -->
