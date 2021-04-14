@@ -106,9 +106,6 @@
                                            href="#"><img style="max-width:300px; max-height: 100px;"
                                                          src="{{asset('/storage/' . $banner->image_nl)}}"
                                                          class="img-fluid d-block m-auto" alt=""></a>
-                                        <div class="r-offer-img-over" >
-                                            <i class="fa fa-search"></i>
-                                        </div>
                                     </div>
                                     <div class="r-best-offer-content">
                                         <a href="#"><b>{{ $banner->title }} </b>Deluxe</a>
@@ -121,7 +118,7 @@
                                             <li><i class="fa"></i><span>LUXE</span></li>
                                         </ul>
                                     </div>
-                                    <div class="r-offer-rewst-this" onclick="return alert('Yacht Rented')">
+                                    <div class="r-offer-rewst-this" onclick="return alert('Yacht Rented')  ">
                                         <span class="text-uppercase">Rent this yacht</span>
                                     </div>
                                 </div>

@@ -23,7 +23,6 @@
                             <p>URL: {{ $banner->url }}</p>
                             <p>@lang('content.yacht_description'): {{ $banner->description }}</p>
                             <p>@lang('content.yacht_price'): {{ $banner->price }}</p>
-                            <p>@lang('content.yacht_width'): {{ $banner->width }}</p>
                             <p>Banner: </p><img class="img-fluid max_width_banner" src="{{asset('/storage/' . $banner->image_nl)}}">
                             <p class="mb-0"><a
                                     href="{{ url('/banners/' . $banner->id) }}">@lang('content.edit-banner')</a></p>

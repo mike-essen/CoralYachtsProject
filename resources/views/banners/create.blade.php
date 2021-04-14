@@ -31,21 +31,6 @@
                     <input type="text" class="form-control" id="description" name="description" autocomplete="off"/>
                 </div>
                 <div class="form-group form-material">
-                    <label class="form-control-label" for="width">Yacht @lang('content.yacht_width')</label><br>
-                    <small>
-                        @lang('content.best-results')<br>
-                        1/3 @lang('content.format'): 360px x 350px<br>
-                        2/3 @lang('content.format'): 750px x 350px<br>
-                        3/3 @lang('content.format'): 1110px x 350px<br>
-                    </small>
-                    <select name="width" id="width" class="form-control" required="required">
-                        <option value="" hidden>@lang('content.make-selection')</option>
-                        <option value="1/3">1/3 @lang('content.width')</option>
-                        <option value="2/3">2/3 @lang('content.width')</option>
-                        <option value="3/3">3/3 @lang('content.width')</option>
-                    </select>
-                </div>
-                <div class="form-group form-material">
                     <label class="form-control-label" for="price">Yacht @lang('content.yacht_price')</label>
                     <input type="text" class="form-control" id="price" name="price" autocomplete="off"/>
                 </div>
